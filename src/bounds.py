@@ -44,8 +44,8 @@ def compute_bounds(input_path: str, output_path: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Compute per-column min/max from the generated dataset")
-    parser.add_argument("--input", default="data/consumption.csv", help="Input CSV path")
+    parser = argparse.ArgumentParser(description="Compute per-column min/max from the generated marketplace orders dataset")
+    parser.add_argument("--input", default="data/orders.csv", help="Input CSV path")
     parser.add_argument("--output", default="data/mins_and_maxs.csv", help="Output bounds CSV path")
     args = parser.parse_args()
 

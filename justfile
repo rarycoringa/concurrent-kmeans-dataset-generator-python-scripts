@@ -1,5 +1,5 @@
-generate:
-    uv run python src/generator.py
+generate size="1000":
+    uv run python src/generator.py --size {{size}}
 
 bound:
     uv run python src/bounds.py

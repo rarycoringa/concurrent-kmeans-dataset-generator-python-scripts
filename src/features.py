@@ -17,8 +17,8 @@ def extract_features(input_path: str, output_path: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Extract feature names from the bounds CSV")
-    parser.add_argument("--input", default="data/consumption.csv", help="Input CSV path")
+    parser = argparse.ArgumentParser(description="Extract feature names from the generated marketplace orders CSV")
+    parser.add_argument("--input", default="data/orders.csv", help="Input CSV path")
     parser.add_argument("--output", default="data/features.csv", help="Output features CSV path")
     args = parser.parse_args()
 
